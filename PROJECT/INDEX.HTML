@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My website</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		div.container{
+			width: 100%;
+			border: 2px solid blue;
+        }
+        header,footer{
+        	/*If you want to style to elements the same way do so with commas*/
+        	color: #ffffff;
+        	background-color: #400000;
+        	text-align: center;
+        	 /*Clear is an attribute that is used to specify on which part you want you floating item*/
+        	 clear: left;
+        	 padding: 2em;
+        }
+        nav{
+        	float: left;
+        	margin: 0;
+        	max-width: 200PX;
+        }
+        nav ul{
+        	list-style-type: none;
+        	padding: 0;
+        }
+        article{
+        	margin-left: 200px;
+        	border-left: 2px solid blue;
+        	padding: 2em;
+        	background-color: grey;
+        	/*Overflow is usedto add stylebars if content is too long or much*/
+        	overflow: hidden;
+
+        }
+        li a {
+        	font-family: chiller;
+        	font-size: 23px;
+        	color: green;
+        	background-color: 000000;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>website</header>
+		<!--Below is the section for the navigation
+			This is where your links in other segments are placed-->
+	<nav>
+		<!--We then created an unordered list where we placed our navigation links-->
+		<ul>
+			<!--#refers to an id selector-->
+			<li><a href="#Homepage">Homepage</a></li>
+			<li><a href="#AboutUS">About us</a></li>
+			<li><a href="#contactus">Contact us</a></li>
+		</ul>
+	</nav>
+		<div class="container">
+		<div id="gitau" class="carousel slide" data-ride="carousel">
+			<!--data ride means carousel should apply immediately you launch the webpage-->
+			<ol class="carousel-indicators">
+				<!--we are using ol to show the position of the images and if it moves its new position-->
+				<!--role="listbox"-->
+				<li data-target="#gitau" data-slide-to="0" class="active"></li>
+				<li data-target="#gitau" data-slide-to="1" ></li>
+				<li data-target="#gitau" data-slide-to="2" ></li>
+				<li data-target="#gitau" data-slide-to="3" ></li>
+			</ol>
+			
+				<div class="carousel-inner" >
+   				 <div class="item active">
+      				<img src="img1.jpg" alt="Shawshank" width="100%" height="400px">
+  				 </div>
+
+    			<div class="item">
+     			 	<img src="img2.jpg" alt="Chania"  width="100%" height="400px">
+   				</div>
+   				<div class="item">
+      				<img src="img3.jpg" alt="Shawshank" width="100%" height="400px">
+  				 </div>
+  				</div>
+ 		 	<!--We then add glyphicons that will be used to indicate direct (mini icons)-->
+
+ 		 	 <a class="left carousel-control" href="#gitau" role="button" data-slide="prev">
+   			 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    		<span class="sr-only">Previous</span>
+  			</a>
+ 			 <a class="right carousel-control" href="#gitau" role="button" data-slide="next">
+    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    		<span class="sr-only">Next</span>
+  			</a>
+  		</div>
+  	    </div>
+  	</div>
+	<!--article tags are used when you want to define independent content that doesnt rely on other content-->
+	<article id="AboutUS">
+		<marquee direction-left><h1>cooking is interesting</h1></marquee>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</article>
+	<hr>
+	<!-- this is the segement for about us -->
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="img1.jpg" width="350px" height="170"class="img-circle">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<img src="img2.jpg" weight="350px" height="170px"class="img-circle">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<img src="img3.jpg"weight="350px" height="170px" class="img-circle">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		
+	</div>
+	<footer id="Contact us">
+		<!--&copy is an entity for copyright and &reg is an entity for registered trsdemark-->
+		<form>
+			<input type="text" name="email"
+			placeholder="Enter email address" style="color: black;"><br>
+			<textarea name="message" rows="12" cols="36">comment here</textarea><br>
+			<!-- text area is a multiple line input field< -->
+			<button type="button" onclick="Thank you..." style="color: grey;">submit comment</button>
+		</form>
+		copyright &copy;ecooking <br>
+		+254721567657<br>
+		&reg;register online	
+	</footer>
+	</div>	
+
+	</div>		
+
+</body>
+</html>
